@@ -31,7 +31,7 @@
     <!--soapUI project file location-->
     <projectFile>city-soapui-project.xml</projectFile>
     <!--output file location-->
-    <outputFolder>${project.basedir}/output/</outputFolder>
+    <!--outputFolder>${project.basedir}/output/</outputFolder-->
     <!--junit results file-->
     <junitReport>true</junitReport>
   </configuration>
