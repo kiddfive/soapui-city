@@ -1,0 +1,12 @@
+2015-06-25 17:50:02,397 WARN  [SoapUI] Missing folder [D:\Workspace\soap-ui\ext] for external libraries
+2015-06-25 17:50:02,397 INFO  [DefaultSoapUICore] Creating new settings at [C:\Windows\system32\config\systemprofile\soapui-settings.xml]
+2015-06-25 17:50:09,498 INFO  [WsdlProject] Loaded project from [file:/D:/Workspace/soap-ui/city-soapui-project.xml]
+2015-06-25 17:50:09,502 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [city]
+2015-06-25 17:50:09,503 INFO  [SoapUITestCaseRunner] Running Project [city], runType = SEQUENTIAL
+2015-06-25 17:50:09,517 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TestCase 1]
+2015-06-25 17:50:09,542 INFO  [SoapUITestCaseRunner] running step [CitiesJSON - Request 1]
+2015-06-25 17:50:10,596 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status FAILED
+2015-06-25 17:50:10,596 ERROR [SoapUITestCaseRunner] ASSERTION FAILED -> Missing token [PPLC] in Response
+2015-06-25 17:50:10,597 ERROR [SoapUITestCaseRunner] CitiesJSON - Request 1 failed, exporting to [D:\Workspace\soap-ui/output/\TestSuite_1-TestCase_1-CitiesJSON__Request_1-0-FAILED.txt]
+2015-06-25 17:50:10,606 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TestCase 1], time taken: 792ms, status: FAILED
+2015-06-25 17:50:10,611 INFO  [SoapUITestCaseRunner] Project [city] finished with status [FAILED] in 1103ms

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="8f77d133-9f56-40e7-a1b6-0613e6dd816f" activeEnvironment="Default" name="city" soapui-version="5.1.2" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="TestSuite" value="TestSuite 1"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Save Project" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="3c1e628c-4f82-41d9-b79b-36e244afc995" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://api.geonames.org" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://api.geonames.org</con:endpoint></con:endpoints><con:resource name="CitiesJSON" path="/citiesJSON" id="67405d70-fadd-4d72-95b9-1fbe0604682f"><con:settings/><con:parameters><con:parameter><con:name>north</con:name><con:value>44.1</con:value><con:style>QUERY</con:style><con:default>44.1</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>south</con:name><con:value>-9.9</con:value><con:style>QUERY</con:style><con:default>-9.9</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>east</con:name><con:value>-22.4</con:value><con:style>QUERY</con:style><con:default>-22.4</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>west</con:name><con:value>55.2</con:value><con:style>QUERY</con:style><con:default>55.2</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>lang</con:name><con:value>de</con:value><con:style>QUERY</con:style><con:default>de</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>username</con:name><con:value>demo</con:value><con:style>QUERY</con:style><con:default>demo</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="CitiesJSON" id="57aed6e2-8007-4132-920f-fb28c7c6944c" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:cit="http://api.geonames.org/citiesJSON">cit:Response</con:element></con:representation><con:request name="Request 1" id="c7618635-fd71-4b19-a08d-1be7f6be19b8" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://api.geonames.org</con:endpoint><con:request/><con:originalUri>http://api.geonames.org/citiesJSON</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>north</con:entry><con:entry>south</con:entry><con:entry>east</con:entry><con:entry>west</con:entry><con:entry>lang</con:entry><con:entry>username</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="94d60039-faf6-4bc8-9284-8ccdb56df8c5" name="TestSuite 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="2e91049e-2ca5-4f29-922b-5f862c2f813f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="CitiesJSON - Request 1" id="ecc6f5e4-9abe-40cb-9a88-72faee9dc368"><con:settings/><con:config service="http://api.geonames.org" resourcePath="/citiesJSON" methodName="CitiesJSON" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CitiesJSON - Request 1" id="c7618635-fd71-4b19-a08d-1be7f6be19b8" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://api.geonames.org</con:endpoint><con:request/><con:originalUri>http://api.geonames.org/citiesJSON</con:originalUri><con:assertion type="Simple Contains" id="13639926-8288-4ea5-9858-e8dd69fce3e2" name="Contains"><con:configuration><token>PPLC</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>north</con:entry><con:entry>south</con:entry><con:entry>east</con:entry><con:entry>west</con:entry><con:entry>lang</con:entry><con:entry>username</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

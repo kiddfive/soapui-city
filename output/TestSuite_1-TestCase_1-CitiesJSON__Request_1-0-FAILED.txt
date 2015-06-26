@@ -1,0 +1,41 @@
+Status: FAILED
+Time Taken: 792
+Size: 190
+Timestamp: Thu Jun 25 17:50:09 EST 2015
+TestStep: CitiesJSON - Request 1
+
+----------------- Messages ------------------------------
+[Contains] Missing token [PPLC] in Response
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: http://api.geonames.org
+Method: GET
+StatusCode: 200
+URL: http://api.geonames.org/citiesJSON?north=44.1&south=-9.9&east=-22.4&west=55.2&lang=de&username=demo
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Host: [api.geonames.org]
+Accept-Encoding: [gzip,deflate]
+
+GET http://api.geonames.org/citiesJSON?north=44.1&south=-9.9&east=-22.4&west=55.2&lang=de&username=demo HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: api.geonames.org
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+
+---------------- Response --------------------------
+Keep-Alive: [timeout=15, max=100]
+Server: [Apache/2.2.17 (Linux/SUSE)]
+Cache-Control: [no-cache]
+Access-Control-Allow-Origin: [*]
+Connection: [Keep-Alive]
+#status#: [HTTP/1.1 200 OK]
+Content-Length: [190]
+Date: [Thu, 25 Jun 2015 07:50:12 GMT]
+Content-Type: [application/json;charset=UTF-8]
+
+{"status":{"message":"the daily limit of 30000 credits for demo has been exceeded. Please use an application specific account. Do not use the demo account for your application.","value":18}}
